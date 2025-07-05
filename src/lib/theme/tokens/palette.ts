@@ -1,5 +1,4 @@
 export const palette = {
-    colors: {
         neutral: {
             25: "#FFFFFF",
             50: "#F4F4F5",
@@ -72,6 +71,5 @@ export const palette = {
             700: "#905510",
             800: "#60380B",
             900: "#301C05",
-        },
-    },
+        }
 }

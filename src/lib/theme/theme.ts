@@ -133,8 +133,116 @@ export const lightTheme: DefaultTheme = {
                     },
                 }, 
             },
+         },
+     
+        typography: {
+         fontFamily:{
+            text:typography.fontFamily.text,
+            heading:typography.fontFamily.heading,
+        },
+
+        fontSize:{
+            heading:{
+                h1:typography.fontSize.h1,
+                h2:typography.fontSize.h2,
+                h3:typography.fontSize.h3,
+                h4:typography.fontSize.h4,
+                h5:typography.fontSize.h5,
+                h6:typography.fontSize.h6,
+                },
+            text:{
+                base:typography.fontSize.base,
+                small:typography.fontSize.small,
+                extraSmall:typography.fontSize.extraSmall,
+            },
+            component:{
+                base: typography.fontSize.base,
+                small:typography.fontSize.small,
+                extraSmall:typography.fontSize.extraSmall,
+            },
+        },
+
+        lineHeight:{
+            heading:{
+                h1:typography.lineHeight.h1,
+                h2:typography.lineHeight.h2,
+                h3:typography.lineHeight.h3,
+                h4:typography.lineHeight.h4,
+                h5:typography.lineHeight.h5,
+                h6:typography.lineHeight.h6,
+                },
+            text:{
+                base: typography.lineHeight.base,
+                small:typography.lineHeight.small,
+                extraSmall:typography.lineHeight.extraSmall,
+            },
+            component:{
+                base: typography.lineHeight.base,
+                small:typography.lineHeight.small,
+                extraSmall:typography.lineHeight.extraSmall,
+            },
+        },
+
+         fontWeight:{
+            heading:{
+                h1:typography.fontWeight.medium,
+                h2:typography.fontWeight.medium,
+                h3:typography.fontWeight.medium,
+                h4:typography.fontWeight.medium,
+                h5:typography.fontWeight.medium,
+                h6:typography.fontWeight.medium,
+                },
+            text:{
+                base:typography.fontWeight.regular,
+                small:typography.fontWeight.regular,
+                extraSmall:typography.fontWeight.regular,
+            },
+            component:{
+                base:typography.fontWeight.regular,
+                small:typography.fontWeight.regular,
+                extraSmall:typography.fontWeight.regular,
+            },
+        },
+
      },
-}
+
+
+        spacing:{
+            inner: {
+                noGap:spacers[0],
+                closest:spacers[4],
+                close:spacers[8],
+                relatedS:spacers[16],
+                relatedM:spacers[20],
+                grouped:spacers[24],
+             },
+            outer: {
+                grouped:spacers[20],
+                subsection:spacers[24],
+                section:spacers[40],
+             },
+            padding: {
+                xs:spacers[8],
+                s:spacers[12],
+                m:spacers[16],
+                l:spacers[20],
+                xl:spacers[24],
+               xxl:spacers[32],
+             },
+           height: {
+                x:spacers[0],
+             },
+
+        },
+        borderRadius:{
+                componentInner:spacers[6],
+                componentBase:spacers[8],
+                sectionInner:spacers[12],
+                sectionBase:spacers[16],
+                rounded:spacers[999],
+             },
+        }
+
 
 export const darkTheme: DefaultTheme = {
     ...lightTheme,
@@ -270,5 +378,4 @@ export const darkTheme: DefaultTheme = {
                 }, 
             }
      },
-
 } 

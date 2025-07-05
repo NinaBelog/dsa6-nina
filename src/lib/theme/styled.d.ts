@@ -2,7 +2,6 @@ import "styled-components";
 import { typography } from "./tokens";
 declare module "styled-components" {
 export interface DefaultTheme {
-
     colors: {
         border: {
             primary: {
@@ -137,8 +136,8 @@ export interface DefaultTheme {
      };
      typography: {
         fontFamily:{
-            heading:string;
             text:string;
+            heading:string;
         };
 
         fontSize:{
@@ -231,7 +230,7 @@ export interface DefaultTheme {
             x:string;
         };   
       };
-    borderRadius:{
+     borderRadius:{
         componentInner:string;
         componentBase:string;
         sectionInner:string;
