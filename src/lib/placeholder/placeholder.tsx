@@ -9,7 +9,7 @@ export interface PlaceholderProps {
 }
 
 const StyledPlaceholder = styled.p`
-color: ${(props) => props.theme.colors.text.main};
+color: ${(props) => props.theme.colors.text.neutral.calm.enabled};
 `;
 
 /**
