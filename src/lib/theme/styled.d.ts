@@ -1,5 +1,5 @@
 import "styled-components";
-//import { typography } from "./tokens";
+import { typography } from "./tokens";
 declare module "styled-components" {
 export interface DefaultTheme {
 
@@ -237,6 +237,6 @@ export interface DefaultTheme {
         sectionInner:string;
         sectionBase:string;
         rounded:string;
-      }
-   }
+      };
+   };
 }
