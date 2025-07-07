@@ -204,9 +204,7 @@ export const lightTheme: DefaultTheme = {
             },
         },
 
-     },
-
-
+         },
         spacing:{
             inner: {
                 noGap:spacers[0],
@@ -233,20 +231,37 @@ export const lightTheme: DefaultTheme = {
                 x:spacers[0],
              },
 
-        },
+         },
         borderRadius:{
                 componentInner:spacers[6],
                 componentBase:spacers[8],
                 sectionInner:spacers[12],
                 sectionBase:spacers[16],
                 rounded:spacers[999],
-             },
+         },
+        shadows: {
+            surface:{
+                elevatedHover:`box-shadow: 0px 4px 16px rgba(9, 10, 11, 0.1)`,
+            },
+            overlay: {
+                list:`box-shadow: 0px 2px 8px rgba(9, 10, 11, 0.08)`,
+                tooltip:`box-shadow: 0px 2px 12px rgba(9, 10, 11, 0.1)`,
+                drawer: `box-shadow: 0px 2px 16px rgba(9, 10, 11, 0.12)`,
+                modal:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.12)`,
+                grabbedContent:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.12)`,
+                notifications:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.24)`,
+            },
+         },
+        focus: `box-shadow: 0px 0px 0px 2px #FFF799`,
+        animation: {
+            base: `all 0,2s`,
+        },
         }
 
 
 export const darkTheme: DefaultTheme = {
     ...lightTheme,
-     colors: {
+    colors: {
             border: {
                 primary: {
                     loud: {
@@ -377,5 +392,19 @@ export const darkTheme: DefaultTheme = {
                     },
                 }, 
             }
+            
      },
+    shadows: {
+            surface:{
+                elevatedHover:`box-shadow: 0px 4px 16px rgba(9, 10, 11, 0.1)`,
+            },
+            overlay: {
+                list:`box-shadow: 0px 2px 8px rgba(9, 10, 11, 0.08)`,
+                tooltip:`box-shadow: 0px 2px 12px rgba(9, 10, 11, 0.1)`,
+                drawer: `box-shadow: 0px 2px 16px rgba(9, 10, 11, 0.12)`,
+                modal:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.12)`,
+                grabbedContent:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.12)`,
+                notifications:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.24)`,
+            },
+        },
 } 

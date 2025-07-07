@@ -1,4 +1,4 @@
-export const zIndices = {
+export const zIndexes = {
 	hide: -1,
 	auto: "auto",
 	surface: 0,

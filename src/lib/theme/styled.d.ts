@@ -237,5 +237,22 @@ export interface DefaultTheme {
         sectionBase:string;
         rounded:string;
       };
+     shadows: {
+        surface: {
+            elevatedHover: string;
+        };
+        overlay: {
+            list: string;
+            tooltip: string;
+            drawer: string;
+            modal: string;
+            grabbedContent: string;
+            notifications: string;
+         };
+        }
+     focus: string;
+     animation: {
+        base: string;
+     };
    };
 }

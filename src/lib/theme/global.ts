@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
             -webkit-tap-highlight-color: transparent;
             -webkit-overflow-scrolling: touch;
 
-            font-family: sans-serif;
-            background: ${props => props.theme.colors.bg.neutral.section.calm};
+            font-family: ${props => props.theme.typography.fontFamily.text};
+            background: ${props => props.theme.colors.bg.neutral.section.enabled};
 	}
 `;
