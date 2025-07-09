@@ -12,6 +12,7 @@ function App() {
 			<GlobalStyle />
 			<main>
 				<Button appearance="primary" text ="hello dsa"/>
+				<Button appearance="secondary" text ="hello dsa"/>
 			</main>
 		</ThemeProvider>
 	);

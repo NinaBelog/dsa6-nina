@@ -228,7 +228,8 @@ export const lightTheme: DefaultTheme = {
                xxl:spacers[32],
              },
            height: {
-                x:spacers[0],
+                base: spacers[52],
+                small: spacers[40],
              },
 
          },
@@ -252,7 +253,10 @@ export const lightTheme: DefaultTheme = {
                 notifications:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.24)`,
             },
          },
-        focus: `box-shadow: 0px 0px 0px 2px #FFF799`,
+        focus:{
+            primary: `box-shadow: 0px 0px 0px 2px #BFAF00`,
+            secondary: `box-shadow: 0px 0px 0px 2px #DFDFE0`,
+        },
         animation: {
             base: `all 0,2s`,
         },
@@ -406,5 +410,9 @@ export const darkTheme: DefaultTheme = {
                 grabbedContent:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.12)`,
                 notifications:`box-shadow: 0px 4px 20px rgba(9, 10, 11, 0.24)`,
             },
+        },
+    focus:{
+        primary: `box-shadow: 0px 0px 0px 2px #BFAF00`,
+        secondary: `box-shadow: 0px 0px 0px 2px #696B6D`,
         },
 } 

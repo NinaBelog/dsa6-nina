@@ -30,7 +30,7 @@ export const typography = {
 		small: spacers[20],
 		extraSmall: spacers[16],
 	},
-
+	
 	fontWeight: {
 		regular: "400",
 		medium: "500",

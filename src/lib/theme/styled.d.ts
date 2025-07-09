@@ -227,7 +227,8 @@ export interface DefaultTheme {
             xxl:string;
         };   
         height:{
-            x:string;
+            base:string;
+            small:string;
         };   
       };
      borderRadius:{
@@ -250,7 +251,9 @@ export interface DefaultTheme {
             notifications: string;
          };
         }
-     focus: string;
+     focus:{ 
+        primary: string;
+        secondary:string;}
      animation: {
         base: string;
      };
