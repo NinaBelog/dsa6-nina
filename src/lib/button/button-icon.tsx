@@ -1,32 +1,28 @@
 import styled from "styled-components";
 import { Icon, iconsType } from "../icon";
 
-interface IButtonProps {
+interface IButtonIconProps {
     appearance?: "primary"| "secondary";
-    size?: "base"| "small";
+    size: "base";
     disabled?: boolean;
     loading?: boolean;
-    iconBefore?: iconsType;
-    iconAfter?: iconsType;
-    text?:string;
+    icon: iconsType;
 }
 
-const StyledButton = styled.button<IButtonProps>`
+const StyledButtonIcon = styled.button<IButtonIconProps>`
     border-radius: ${(props) => props.theme.borderRadius.componentBase};
     display: inline-flex;
     flex-direction: row;
     gap: ${(props) => props.theme.spacing.inner.close};
     justify-content: center;
     align-items: center;
-    padding: unset;
+    //padding: unset;
     transition: ${(props) => props.theme.animation.base};
-    }
 
     // APPEARANCE PROP
     ${(props) => props.appearance === "primary" && `
     &:enabled {
         background-color: ${props.theme.colors.bg.primary.loud.enabled};
-        color: ${props.theme.colors.text.neutral.loud.enabled};
         border: 1px solid ${props.theme.colors.border.primary.loud.enabled};
     }
      &:hover {
@@ -45,7 +41,6 @@ const StyledButton = styled.button<IButtonProps>`
     ${(props) => props.appearance === "secondary" && `
         &:enabled {
             background-color: ${props.theme.colors.bg.neutral.calm.enabled};
-            color: ${props.theme.colors.text.neutral.loud.enabled};
             border: 1px solid ${props.theme.colors.border.neutral.calm.enabled};
         }
         &:hover {
@@ -77,41 +72,23 @@ const StyledButton = styled.button<IButtonProps>`
 		props.size === "base" &&
 		`
         height: ${props.theme.spacing.height.base};
-        padding: 0 ${props.theme.spacing.padding.xl};
-        font-size: ${props.theme.typography.fontSize.component.small};
-        line-height: ${props.theme.typography.lineHeight.component.small};
-        font-weight: ${props.theme.typography.fontWeight.component.small};
+        width: ${props.theme.spacing.height.base};
         `}
 
-    ${(props) =>
-		props.size === "small" &&
-		`
-        height: ${props.theme.spacing.height.small};
-        padding: 0 ${props.theme.spacing.padding.m};
-        line-height: ${props.theme.typography.lineHeight.component.small};
-        font-weight: ${props.theme.typography.fontWeight.component.small};
-            `}
-            `;
-
-export const Button: React.FC<IButtonProps> = ({
+export const ButtonIcon: React.FC<IButtonIconProps> = ({
             appearance = "primary", 
             size = "base",
             disabled,
             loading,
-            iconBefore,
-            iconAfter,
-            text = "Hello",
-}) => {
-    return <StyledButton  
-            appearance={appearance}
-            size = {size}
-            disabled={disabled}
-            loading={loading}
-            iconBefore={iconBefore}
-            iconAfter={iconAfter}
-    >
-    {iconBefore && <Icon size={size === "base" ? 20 : 16} iconName={iconBefore}/>}
-    {text}
-    {iconAfter && <Icon size={size === "base" ? 20 : 16} iconName={iconAfter}/>}
-    </StyledButton>;
+            icon,
+})  => {
+            return <StyledButtonIcon  
+                    appearance={appearance}
+                    size = {size}
+                    disabled={disabled}
+                    loading={loading}
+                    icon={icon}
+        >
+            {icon && <Icon size={20} iconName={icon} />}
+    </StyledButtonLink>;
 };
