@@ -3,7 +3,7 @@ import { GlobalStyle } from "./lib/theme";
 import { Placeholder } from "./lib/placeholder";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./lib/theme";
-import { Button, ButtonLink, ButtonIcon, ButtonGroup } from "./lib";
+import { Button, ButtonLink, ButtonIcon } from "./lib";
 
 function App() {
 	const switcher = true;
@@ -18,7 +18,6 @@ function App() {
 				<Button size="small"disabled appearance="secondary" text ="hello dsa"/>
 				<ButtonLink iconBefore="sample" size="base" appearance="primary" text ="I'm button" iconAfter="filter"/>
 				<ButtonIcon icon="sample" size="base" appearance="primary"/>
-				<Card />
 			</main>
 		</ThemeProvider>
 	);

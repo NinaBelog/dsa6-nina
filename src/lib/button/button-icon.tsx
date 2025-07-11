@@ -13,10 +13,8 @@ const StyledButtonIcon = styled.button<IButtonIconProps>`
     border-radius: ${(props) => props.theme.borderRadius.componentBase};
     display: inline-flex;
     flex-direction: row;
-    gap: ${(props) => props.theme.spacing.inner.close};
     justify-content: center;
     align-items: center;
-    //padding: unset;
     transition: ${(props) => props.theme.animation.base};
 
     // APPEARANCE PROP
@@ -74,6 +72,7 @@ const StyledButtonIcon = styled.button<IButtonIconProps>`
         height: ${props.theme.spacing.height.base};
         width: ${props.theme.spacing.height.base};
         `}
+        `;
 
 export const ButtonIcon: React.FC<IButtonIconProps> = ({
             appearance = "primary", 
@@ -90,5 +89,5 @@ export const ButtonIcon: React.FC<IButtonIconProps> = ({
                     icon={icon}
         >
             {icon && <Icon size={20} iconName={icon} />}
-    </StyledButtonLink>;
+    </StyledButtonIcon>;
 };
